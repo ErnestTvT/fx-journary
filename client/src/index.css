@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-all duration-200;
+}
+
+body {
+  @apply bg-dark-bg text-white;
+}
+
+.btn-primary {
+  @apply px-6 py-2.5 bg-accent text-white rounded-card font-medium hover:bg-blue-600 active:scale-95 shadow-soft;
+}
+
+.btn-secondary {
+  @apply px-6 py-2.5 bg-dark-card text-white rounded-card font-medium hover:bg-dark-border active:scale-95 border border-dark-border;
+}
+
+.card {
+  @apply bg-dark-card rounded-card p-6 border border-dark-border shadow-card hover:border-accent/30;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-dark-card border border-dark-border rounded-card text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/20;
+}
+
+.label {
+  @apply block text-sm font-medium text-gray-300 mb-2;
+}
+
+.stat-card {
+  @apply bg-dark-card rounded-card p-4 border border-dark-border;
+}
+
+.stat-value {
+  @apply text-2xl font-bold text-accent;
+}
+
+.stat-label {
+  @apply text-sm text-gray-400 mt-1;
+}
